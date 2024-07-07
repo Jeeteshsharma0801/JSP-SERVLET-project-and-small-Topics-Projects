@@ -1,0 +1,24 @@
+RegisterLoginProject:
+In this project i made frontend signup.jsp form using materializeCSS in which i provided 4 feilds name , password , email and image upload 
+and using the jquery in the same jsp page , upon submit button i have saved this data in Mysql DB table in schemaName='youtube' and tableName='user' and by using 'Register' servlet.
+we are saving the image name only in DB feild and saving the uploaded image at server itself.
+
+
+
+ErrorHandlingProject:
+In this project , we are taking 2 values from user in form defined in index.html page , and this project will divide the values and give the result to user and if any exceptioon occurs like 44/0 then divide by zero exception occurs then it will redirect to some other page and added image to that page and also exception will be shown to that error page.
+and if any address given in URL is not found i.e. if any 404 error occurs , then we have handled this particular error in another different jsp page and image will be shown to that page.
+
+
+TechBlog_servletJSPProject:
+In this project , http://localhost:8080/TechBlog_servletJSPProject/ by this URL index.jsp page will appear , and that page we have login, signup buttons .
+Upon clicking on signup button , after entering the details , information will go to the DB in "user" table.
+and when clicked on "Login" button , when user will enter the email and password , it'll verify from DB "user" table , if username and password from DB is correct then , then it'll redirect to some other page i.e. profile.jsp page . 
+whatever categories available in DB "categories" table , will be available on left side and right side all the posts will be available from DB "posts" table.
+if any user logged in and like the post , then that like entry will goto DB "liked" table.
+also we have given the "Logout" Button , when user click that logout button , the session will expire and user get logged out.
+
+Connection made with Mysql with schemaName=techblogproject , username=root , password=Jeet0801@ in connectionProvider.java file.
+
+we have used categories , liked , posts , user tables in DB with primary key as user id , postid , catID , likeid and foreign keys catid, userid etc.
+see SS of the project.
